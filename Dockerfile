@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Instala dependências primeiro (melhor cache do Docker)
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm install --only=production
 
 # ─── Estágio final (imagem mínima) ───────────────────────────
 FROM node:20-alpine
