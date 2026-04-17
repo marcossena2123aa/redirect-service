@@ -1,0 +1,18 @@
+{
+  "vagas-ti": {
+    "url": "https://seusite.com.br/vagas/tecnologia",
+    "label": "Vagas TI - Outubro 2024"
+  },
+  "vagas-rh": {
+    "url": "https://seusite.com.br/vagas/rh",
+    "label": "Vagas RH - Outubro 2024"
+  },
+  "cadastro": {
+    "url": "https://seusite.com.br/cadastro-candidato",
+    "label": "Cadastro de Candidatos"
+  },
+  "newsletter": {
+    "url": "https://seusite.com.br/newsletter",
+    "label": "Newsletter RH"
+  }
+}
