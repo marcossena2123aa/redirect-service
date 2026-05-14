@@ -239,11 +239,8 @@ app.get("/go/:shortCode", (req, res) => {
     return res.redirect(302, `/r/${shortCode}`);
   }
 
-  // Gera ID aleatório de 11 dígitos e adiciona _NUMERO no final da URL
-  // Exemplo: .../portfolio_id_89969874675 → .../portfolio_id_89969874675_53847291034
-  // Exemplo: .../vagas → .../vagas_53847291034
-  const randomId = Math.floor(10000000000 + Math.random() * 90000000000).toString();
-  const finalUrl = link.url + "_" + randomId;
+  // Link fixo — redireciona exatamente para a URL configurada no links.json
+  const finalUrl = link.url;
 
   console.log(`CLIQUE | ${shortCode} → ${finalUrl}`);
   res.setHeader("Cache-Control", "no-store");
